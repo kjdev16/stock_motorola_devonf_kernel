@@ -81,15 +81,6 @@ SX937X_MTK_KERNEL5XX_CHARGER_TYPE=y
 CONFIG_CAPSENSE_USB_CAL=y
 
 EXT_MODULES+="
-vendor/mediatek/kernel_modules/connectivity/common
-vendor/mediatek/kernel_modules/connectivity/connfem
-vendor/mediatek/kernel_modules/connectivity/bt/mt66xx/wmt
-vendor/mediatek/kernel_modules/connectivity/gps/gps_pwr
-vendor/mediatek/kernel_modules/connectivity/gps/gps_stp
-vendor/mediatek/kernel_modules/connectivity/wlan/adaptor
-vendor/mediatek/kernel_modules/connectivity/wlan/core/gen4m
-vendor/mediatek/kernel_modules/gpu
-vendor/mediatek/kernel_modules/met_drv_v3
 vendor/motorola/drivers/backlight/aw99703
 vendor/motorola/drivers/backlight/ktd3136
 vendor/motorola/drivers/sensors
@@ -107,3 +98,5 @@ vendor/motorola/drivers/moto_swap
 vendor/motorola/drivers/power/qpnp_adaptive_charge
 vendor/motorola/drivers/power/sc8551_mmi
 "
+
+SKIP_MRPROPER=1
